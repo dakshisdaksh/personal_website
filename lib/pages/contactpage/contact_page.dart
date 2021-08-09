@@ -240,24 +240,24 @@ Widget footerWidget(
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 20.0),
-              child: Row(
-                //mainAxisSize: MainAxisSize.max,
-                //mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  IconButton(
-                      icon: Icon(Icons.border_left_outlined),
-                      onPressed: () async {
-                        await scrollController.animateTo(
-                            scrollController.position.minScrollExtent,
-                            duration: Duration(seconds: 1),
-                            curve: Curves.ease);
-                        themeProvider.toggleTheme();
-                      }),
-                ],
-              ),
-            )
+            // Padding(
+            //   padding: const EdgeInsets.only(right: 20.0),
+            //   child: Row(
+            //     //mainAxisSize: MainAxisSize.max,
+            //     //mainAxisAlignment: MainAxisAlignment.end,
+            //     children: [
+            //       IconButton(
+            //           icon: Icon(Icons.border_left_outlined),
+            //           onPressed: () async {
+            //             await scrollController.animateTo(
+            //                 scrollController.position.minScrollExtent,
+            //                 duration: Duration(seconds: 1),
+            //                 curve: Curves.ease);
+            //             themeProvider.toggleTheme();
+            //           }),
+            //     ],
+            //   ),
+            // )
           ],
         ),
       ],
@@ -299,35 +299,39 @@ Widget websiteIcon(ScrollController scrollController) {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
-              border: Border(
-                  left: BorderSide(width: 2),
-                  right: BorderSide(width: 2),
-                  bottom: BorderSide(width: 2),
-                  top: BorderSide(width: 2)),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(40),
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
-              )),
+          // decoration: BoxDecoration(
+          //     color: Colors.white.withOpacity(0.2),
+          //     border: Border(
+          //         left: BorderSide(width: 2),
+          //         right: BorderSide(width: 2),
+          //         bottom: BorderSide(width: 2),
+          //         top: BorderSide(width: 2)),
+          //     borderRadius: BorderRadius.only(
+          //       topLeft: Radius.circular(40),
+          //       topRight: Radius.circular(40),
+          //       bottomRight: Radius.circular(40),
+          //       bottomLeft: Radius.circular(40)
+          //     )),
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(0.0),
             child: Text(
-              kIconFirstLetter,
+              "Shhdwi",
               // style: TextStyle(
               //     fontSize: 20,
               //     color: Colors.redAccent,
               //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.specialElite(
                   color: Colors.red, fontSize: 30, fontWeight: FontWeight.w600),
             ),
           ),
         ),
-        Text(
-          kIconRemainingLetters,
-          // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.w600),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Text(
+            "|    Shrish Dwivedi",
+            // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.w600),
+          ),
         ),
       ],
     ),
