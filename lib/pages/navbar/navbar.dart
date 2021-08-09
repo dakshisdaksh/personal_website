@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:personal_website/providers/theme_provider.dart';
 import 'package:personal_website/providers/utility_provider.dart';
+import 'package:personal_website/themes/themes.dart';
 import 'package:personal_website/utilities/strings.dart';
 import 'package:provider/provider.dart';
 
@@ -28,10 +30,12 @@ class DesktopNavbar extends StatefulWidget {
 
 class _DesktopNavbarState extends State<DesktopNavbar> {
   var utilityProvider;
+  var themeProvider;
   late ScrollController scrollController;
 
   @override
   Widget build(BuildContext context) {
+    themeProvider = Provider.of<ThemeProvider>(context);
     utilityProvider = Provider.of<UtilityProvider>(context);
     scrollController = utilityProvider.getScrollController();
 
@@ -42,7 +46,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
               Flexible(child: websiteIcon()),
-              Flexible(child: navBarItems(scrollController)),
+              Flexible(child: navBarItems(scrollController,themeProvider)),
             ])));
   }
 }
@@ -54,10 +58,13 @@ class MobileNavbar extends StatefulWidget {
 
 class _MobileNavbarState extends State<MobileNavbar> {
   var utilityProvider;
+  var themeProvider;
   late ScrollController scrollController;
 
   @override
   Widget build(BuildContext context) {
+    themeProvider = Provider.of<ThemeProvider>(context);
+
     utilityProvider = Provider.of<UtilityProvider>(context);
     scrollController = utilityProvider.getScrollController();
 
@@ -70,7 +77,7 @@ class _MobileNavbarState extends State<MobileNavbar> {
         SizedBox(
           height: 20,
         ),
-        navBarItems(scrollController)
+        navBarItems(scrollController, themeProvider)
       ],
     ));
   }
@@ -82,42 +89,50 @@ Widget websiteIcon() {
     child: Row(
       children: [
         Container(
-          decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
-              border: Border(
-                  left: BorderSide(width: 2),
-                  right: BorderSide(width: 2),
-                  bottom: BorderSide(width: 2),
-                  top: BorderSide(width: 2)),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(40),
-                topRight: Radius.circular(40),
-                bottomRight: Radius.circular(40),
-              )),
+          // decoration: BoxDecoration(
+          //     color: Colors.white.withOpacity(0.2),
+          //     border: Border.all(color: Colors.amberAccent,width: 5),
+          //     borderRadius: BorderRadius.only(
+          //       topLeft: Radius.circular(40),
+          //       topRight: Radius.circular(40),
+          //       bottomRight: Radius.circular(40),
+          //       bottomLeft: Radius.circular(40),
+          //
+          //     ),
+          //
+          // ),
           child: Padding(
             padding: const EdgeInsets.all(12.0),
             child: Text(
-              kIconFirstLetter,
+              "Shhdwi",
               // style: TextStyle(
               //     fontSize: 20,
               //     color: Colors.redAccent,
               //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.poppins(
-                  color: Colors.red, fontSize: 30, fontWeight: FontWeight.w600),
+              style: GoogleFonts.specialElite( fontSize: 30, fontWeight: FontWeight.bold),
             ),
           ),
         ),
-        Text(
-          kIconRemainingLetters,
-          // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-          style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.w600),
+        Padding(
+          padding: const EdgeInsets.all(18.0),
+          child: Text(
+            "|   Shrish Dwivedi",
+            // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: GoogleFonts.tangerine(fontSize: 40, fontWeight: FontWeight.bold),
+          ),
         ),
       ],
     ),
   );
 }
 
-Widget navBarItems(ScrollController scrollController) {
+Widget navBarItems(ScrollController scrollController, ThemeProvider themeProvider) {
+ ThemeData _theme = themeProvider.getTheme;
+ bool light = true;
+ // ignore: unrelated_type_equality_checks
+ if (_theme == Themes.lightTheme){
+   light =true;
+ }else{light = false;}
   return Row(
     // mainAxisSize: MainAxisSize.max,
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -150,6 +165,15 @@ Widget navBarItems(ScrollController scrollController) {
           curve: Curves.ease,
         );
       }),
+      IconButton(
+          icon: light ?  Icon(Icons.light_mode_rounded ): Icon(Icons.dark_mode_rounded),
+          onPressed: () async {
+            await scrollController.animateTo(
+                scrollController.position.minScrollExtent,
+                duration: Duration(seconds: 1),
+                curve: Curves.ease);
+                themeProvider.toggleTheme();
+          }),
     ],
   );
 }

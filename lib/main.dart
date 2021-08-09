@@ -26,6 +26,7 @@ class _PortfolioAppState extends State<PortfolioApp> {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         title: kTitle,
         theme: themeProvider.getTheme,
         home: Scaffold(
