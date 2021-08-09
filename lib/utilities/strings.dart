@@ -8,10 +8,10 @@ final String kPortfolio = 'Projects';
 final String kContact = "Contact Me!";
 
 //final Strings used for about page
-final String kHello = 'Heyy!';
+final String kHello = 'Hi, There!';
 final String kName = "I'm Shrish Dwivedi!";
 final String kDescription =
-    ' Mobile Developer & Tech Enthusiast';
+    ' Mobile Developer & Tech Enthusiast, \n Lead @ GDSC BITS Pilani Goa Campus';
 final String kProfileImageURL =
     'lib/images/shrish.jpeg'; //bundling an optimized image for better performance
 
@@ -62,5 +62,5 @@ final String kRightsReserved = 'Made with ❤ by Shrish';
 
 //final String social Links used under icon_widgets.dart
 final String kLinkedInURL = 'https://www.linkedin.com/in/shhdwi/';
-final String kTwitterURL = '';
+final String kTwitterURL = 'https://www.instagram.com/shrish_dwi/';
 final String kGithubURL = 'https://github.com/shhdwi';
