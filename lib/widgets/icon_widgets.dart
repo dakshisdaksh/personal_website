@@ -20,15 +20,15 @@ Widget iconWidget(String iconName) {
     );
   } else if (iconName == 'twitter') {
     return InkWell(
-      borderRadius: BorderRadius.all(Radius.circular(40)),
-      hoverColor: Colors.lightBlueAccent.withOpacity(0.5),
+      borderRadius: BorderRadius.all(Radius.circular(10)),
+      hoverColor: Colors.pinkAccent.withOpacity(0.5),
       onTap: () {
         launchUrl(kTwitterURL);
       },
       child: Container(
-          width: 48,
-          height: 48,
-          child: Image(image: AssetImage('lib/icons/twitter_2x.png'))),
+          width: 38,
+          height: 38,
+          child: Image(image: AssetImage('lib/images/instagram.png'))),
     );
   } else {
     return InkWell(
