@@ -496,17 +496,29 @@ class _GithubPageState extends State<GithubPage> {
   Widget build(BuildContext context) {
 
     return Material(
-      color: Vx.purple700,
+      color: Vx.blueGray500,
       child: Flex(
           direction: context.isMobile ? Axis.vertical : Axis.horizontal,
           children: [
-            "All Creative works,\n"
-                .richText
-                .withTextSpanChildren(
-                ["Github Repositories".textSpan.yellow400.make()])
-                .xl4
-                .white
-                .make(),
+            Column(
+              children: [
+                "All Projects,\n"
+                    .richText
+                    .withTextSpanChildren(
+                    ["Github Repositories\n".textSpan.yellow400.make(),])
+                    .xl4
+                    .white
+                    .make(),
+                "Powered by"
+                    .richText
+                    .withTextSpanChildren(
+                    [" Github Api".textSpan.orange400.make(),])
+                    .xl
+                    .white
+                    .make(),
+              ],
+            ),
+
             20.widthBox,
             Expanded(
                 child: FutureBuilder<All>(
@@ -561,7 +573,7 @@ class ProjectWidget extends StatelessWidget {
           .box
           .p8
           .roundedLg
-          .neumorphic(color: Vx.purple700, elevation: 5, curve: VxCurve.flat)
+          .neumorphic(color: Vx.blueGray700, elevation: 5, curve: VxCurve.flat)
           .alignCenter
           .square(200)
           .make()
