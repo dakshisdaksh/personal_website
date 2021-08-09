@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:personal_website/pages/aboutpage/about_page.dart';
 import 'package:personal_website/pages/contactpage/contact_page.dart';
 import 'package:personal_website/pages/navbar/navbar.dart';
@@ -93,11 +94,7 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Logo.websiteIcon(),
-                SizedBox(
-                  height: 50,
-                ),
-                CircularProgressIndicator()
+                Lottie.asset("lib/images/loader.json",height: 200,width: 200,fit:BoxFit.contain)
               ],
             ),
           )
