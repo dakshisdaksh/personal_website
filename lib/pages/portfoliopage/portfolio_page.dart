@@ -43,11 +43,11 @@ class _DesktopPortfolioPageState extends State<DesktopPortfolioPage> {
               physics: NeverScrollableScrollPhysics(),
               child:
                   Column(crossAxisAlignment: CrossAxisAlignment.end, children: [
-                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl1,"ok"),
+                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl1,"Book reselling app"),
                 SizedBox(
                   height: 60,
                 ),
-                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl2,"ok"),
+                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl2,"Expense Manager"),
                 SizedBox(
                   height: 60,
                 ),
@@ -67,11 +67,11 @@ class _DesktopPortfolioPageState extends State<DesktopPortfolioPage> {
                 SizedBox(
                   height: 60,
                 ),
-                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl3,"ok"),
+                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl3,"Hydrogen OS"),
                 SizedBox(
                   height: 60,
                 ),
-                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl4,"ok"),
+                workShowCaseImages(0.6 * height, 0.4 * width, kWorkImageUrl4,"Graphine: A Python Graph plotting Algorithm"),
                 SizedBox(
                   height: 60,
                 ),
@@ -112,11 +112,11 @@ class _TabletPorfolioPageState extends State<TabletPortfolioPage> {
                 SizedBox(
                   height: 60,
                 ),
-                workShowCaseImages(400, 0.4 * width, kWorkImageUrl1,"ok"),
+                workShowCaseImages(400, 0.4 * width, kWorkImageUrl1,"Book reselling app"),
                 SizedBox(
                   height: 20,
                 ),
-                workShowCaseImages(400, 0.4 * width, kWorkImageUrl2,"ok"),
+                workShowCaseImages(400, 0.4 * width, kWorkImageUrl2,"Expense Manager"),
                 SizedBox(
                   height: 30,
                 ),
@@ -139,11 +139,11 @@ class _TabletPorfolioPageState extends State<TabletPortfolioPage> {
                 SizedBox(
                   height: 20,
                 ),
-                workShowCaseImages(400, 0.4 * width, kWorkImageUrl3,"ok"),
+                workShowCaseImages(400, 0.4 * width, kWorkImageUrl3,"Hydrogen OS"),
                 SizedBox(
                   height: 20,
                 ),
-                workShowCaseImages(400, 0.4 * width, kWorkImageUrl4,"ok"),
+                workShowCaseImages(400, 0.4 * width, kWorkImageUrl4,"Graphine: A Python Graph plotting Algorithm"),
                 SizedBox(
                   height: 20,
                 ),
@@ -185,15 +185,15 @@ class _MobilePortfolioPageState extends State<MobilePortfolioPage> {
             SizedBox(
               height: 30,
             ),
-            workShowCaseImages(350, width, kWorkImageUrl1,"ok"),
+            workShowCaseImages(350, width, kWorkImageUrl1,"Book reselling app"),
             SizedBox(
               height: 20,
             ),
-            workShowCaseImages(350, width, kWorkImageUrl3,"ok"),
+            workShowCaseImages(350, width, kWorkImageUrl3,"Hydrogen OS"),
             SizedBox(
               height: 20,
             ),
-            workShowCaseImages(350, width, kWorkImageUrl4,"ok"),
+            workShowCaseImages(350, width, kWorkImageUrl4,"Graphine: A Python Graph plotting Algorithm"),
             SizedBox(
               height: 20,
             ),
