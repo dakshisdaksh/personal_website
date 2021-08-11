@@ -11,7 +11,7 @@ final String kContact = "Contact Me!";
 final String kHello = 'Hi, There!';
 final String kName = "I'm Shrish Dwivedi!";
 final String kDescription =
-    ' Mobile Developer & Tech Enthusiast, \n Lead @ GDSC BITS Pilani Goa Campus';
+    ' Mobile Developer & Tech Enthusiast ✨ , \n Lead @ GDSC BITS Pilani Goa Campus 👨🏽‍💻';
 final String kProfileImageURL =
     'lib/images/shrish.jpeg'; //bundling an optimized image for better performance
 
@@ -22,10 +22,10 @@ final String kCard2title = 'Mobile App Development';
 final String kCard3title = 'Video Editing';
 final String kWhoIam = 'Who I Am';
 final String kWhoIamDetails =
-    'Experienced App Developer, love creating amazing Apps for Mobile && Web across different Screen Sizes, Fan of Amazing UI/UX && Open-Source Lover and Contributor';
+    "I am a sophomore at BITS Pilani Goa Campus, Currently Google Developer Student Club Lead at BITS Goa. Personally, I'm very passionate about Finance and Stock Markets and have a keen interest in Android and Web Development.";
 
 final String kCard1Descrption =
-    'I have made many individual projects in python';
+    'I am proficient in the programming language python, and I have made many individual and group projects in python. ';
 final String kCard2Descrption =
     'Experienced in creating robust and user friendly Mobile Apps for both Android and iOS Platforms in flutter. Also have made android apps using java';
 final String kCard3Descrption =
@@ -48,7 +48,7 @@ final String kWorkImageUrl3 = 'lib/images/hydrogen.jpg';
 final String kWorkImageUrl4 = 'lib/images/graph.jpg';
 
 //final String for Contact Page
-final String kContactCardTitle = 'Have Any Project in Mind? Say Hello At';
+final String kContactCardTitle = 'Have any Project Ideas in mind? Contact me At';
 final String kEmail = 'dwi.shrish@gmail.com';
 
 //final Strings for Website Icon

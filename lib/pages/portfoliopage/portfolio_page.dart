@@ -120,7 +120,8 @@ class _TabletPorfolioPageState extends State<TabletPortfolioPage> {
                 SizedBox(
                   height: 30,
                 ),
-                viewAllWorkButtonWidget()
+                viewAllWorkButtonWidget(),
+                    SizedBox(height: 20,)
               ]),
             ),
           ),
@@ -264,5 +265,6 @@ Widget viewAllWorkButtonWidget() {
         } else {
           throw 'Could not launch $url';
         }
+
       });
 }

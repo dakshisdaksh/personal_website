@@ -320,7 +320,7 @@ Widget websiteIcon(ScrollController scrollController) {
               //     fontSize: 20,
               //     color: Colors.redAccent,
               //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.specialElite(
+              style: GoogleFonts.tangerine(
                   color: Colors.red, fontSize: 30, fontWeight: FontWeight.w600),
             ),
           ),
@@ -328,7 +328,7 @@ Widget websiteIcon(ScrollController scrollController) {
         Padding(
           padding: const EdgeInsets.all(15.0),
           child: Text(
-            "|    Shrish Dwivedi",
+            "|   Shrish Dwivedi",
             // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             style: GoogleFonts.poppins(fontSize: 25, fontWeight: FontWeight.w600),
           ),

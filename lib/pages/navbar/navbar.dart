@@ -102,21 +102,21 @@ Widget websiteIcon() {
           //
           // ),
           child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(
               "Shhdwi",
               // style: TextStyle(
               //     fontSize: 20,
               //     color: Colors.redAccent,
               //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.specialElite( fontSize: 30, fontWeight: FontWeight.bold),
+              style: GoogleFonts.tangerine( fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(18.0),
+          padding: const EdgeInsets.all(10.0),
           child: Text(
-            "|   Shrish Dwivedi",
+            "|  Shrish Dwivedi",
             // style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             style: GoogleFonts.tangerine(fontSize: 40, fontWeight: FontWeight.bold),
           ),
@@ -153,7 +153,7 @@ Widget navBarItems(ScrollController scrollController, ThemeProvider themeProvide
       }),
       navBarOptions(kPortfolio, 3, () {
         scrollController.animateTo(
-          0.60 * scrollController.position.maxScrollExtent,
+          0.65 * scrollController.position.maxScrollExtent,
           duration: Duration(seconds: 2),
           curve: Curves.ease,
         );
