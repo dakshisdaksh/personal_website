@@ -11,7 +11,7 @@ final String kContact = "Contact Me!";
 final String kHello = 'Hi, There!';
 final String kName = "I'm Shrish Dwivedi!";
 final String kDescription =
-    ' Mobile Developer & Tech Enthusiast ✨ , \n Lead @ GDSC BITS Pilani Goa Campus 👨🏽‍💻';
+    ' Mobile Developer & Tech Enthusiast ✨ , \n Lead @ GDSC BITS Pilani Goa Campus';
 final String kProfileImageURL =
     'lib/images/shrish.jpeg'; //bundling an optimized image for better performance
 
