@@ -72,10 +72,10 @@ class _MobileNavbarState extends State<MobileNavbar> {
         child: Column(
       children: [
         Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 16),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
             child: websiteIcon()),
         SizedBox(
-          height: 20,
+          height: 10,
         ),
         navBarItems(scrollController, themeProvider)
       ],
@@ -109,7 +109,7 @@ Widget websiteIcon() {
               //     fontSize: 20,
               //     color: Colors.redAccent,
               //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.tangerine( fontSize: 20, fontWeight: FontWeight.bold),
+              style: GoogleFonts.specialElite( fontSize: 25, fontWeight: FontWeight.bold),
             ),
           ),
         ),
