@@ -1,0 +1,10 @@
+:root {
+  --theme-palette-primary: #8252FF;
+  --theme-palette-secondary: #12E5E0;
+  --theme-palette-light: #FFFFFF;
+  --theme-palette-soft-light: #F6F9FB;
+  --theme-palette-dark: #3C4153;
+  --theme-palette-soft-dark: #4D546A;
+  --theme-palette-light-borders: #D3DCE4;
+  --theme-palette-dark-borders: #B0BBC7;
+}
