@@ -7,6 +7,8 @@ import 'package:personal_website/widgets/icon_widgets.dart';
 
 import 'package:provider/provider.dart';
 
+import '../../themes/themes.dart';
+
 class ContactPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -230,11 +232,20 @@ Widget footerWidget(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Image(
+                      image: themeProvider.getTheme==Themes.lightTheme? AssetImage('lib/images/img1-left.png'): AssetImage('lib/images/img2-left.png'),
+                      fit: BoxFit.cover,
+                    ),Spacer(),
                     Text(
                       kRightsReserved,
                       textAlign: TextAlign.center,
                       style:
                           TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+                    ),
+                    Spacer(),
+                    Image(
+                      image: themeProvider.getTheme==Themes.lightTheme? AssetImage('lib/images/img1-right.png'): AssetImage('lib/images/img2-right.png'),
+                      fit: BoxFit.cover,
                     ),
                   ],
                 ),

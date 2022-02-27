@@ -13,7 +13,7 @@ final String kName = "I'm Shrish Dwivedi!";
 final String kDescription =
     ' Mobile Developer & Tech Enthusiast ✨ , \n Lead @ GDSC BITS Pilani Goa Campus';
 final String kProfileImageURL =
-    'lib/images/shrish.jpeg'; //bundling an optimized image for better performance
+    'lib/images/shrish.png'; //bundling an optimized image for better performance
 
 //final Strings for services page
 final String kWhatIdo = 'What I Do';
@@ -33,7 +33,7 @@ final String kCard3Descrption =
 
 final String kDownloadCV = 'Download CV';
 final String kCvUrl =
-    '';
+    'https://drive.google.com/file/d/1hELrUvB6SYBMdOx2UBExzSqwK1W_3B0r/view?usp=sharing';
 
 //final Strings for portfolio page
 final String kMySelectedWork = 'My Selected Work';

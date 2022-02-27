@@ -45,7 +45,7 @@ class _DesktopNavbarState extends State<DesktopNavbar> {
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-              Flexible(child: websiteIcon()),
+              Flexible(child: websiteIcon(context)),
               Flexible(child: navBarItems(scrollController,themeProvider)),
             ])));
   }
@@ -73,7 +73,7 @@ class _MobileNavbarState extends State<MobileNavbar> {
       children: [
         Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16),
-            child: websiteIcon()),
+            child: websiteIcon(context)),
         SizedBox(
           height: 10,
         ),
@@ -83,7 +83,8 @@ class _MobileNavbarState extends State<MobileNavbar> {
   }
 }
 
-Widget websiteIcon() {
+Widget websiteIcon(BuildContext context) {
+  var themeProvider = Provider.of<ThemeProvider>(context);
   return GestureDetector(
     onTap: () {},
     child: Row(
@@ -103,13 +104,17 @@ Widget websiteIcon() {
           // ),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text(
-              "Shhdwi",
-              // style: TextStyle(
-              //     fontSize: 20,
-              //     color: Colors.redAccent,
-              //     fontWeight: FontWeight.bold),
-              style: GoogleFonts.specialElite( fontSize: 25, fontWeight: FontWeight.bold),
+            // child: Text(
+            //   "Shhdwi",
+            //   // style: TextStyle(
+            //   //     fontSize: 20,
+            //   //     color: Colors.redAccent,
+            //   //     fontWeight: FontWeight.bold),
+            //   style: GoogleFonts.specialElite( fontSize: 25, fontWeight: FontWeight.bold),
+            // ),
+            child: Image(
+              image: themeProvider.getTheme==Themes.lightTheme? AssetImage('lib/images/ok.png'): AssetImage('lib/images/okok.png'),
+              fit: BoxFit.cover,
             ),
           ),
         ),
